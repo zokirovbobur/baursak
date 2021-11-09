@@ -1,0 +1,219 @@
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 !important;
+  height: 100vh;
+}
+
+/*header start*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
+  height: 25%;
+}
+.header-div{
+  background-color: #fff;
+  padding: 1.5rem 0;
+}
+
+.header-div a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-div a img{
+  width: 25%;
+  position: relative;
+}
+.header .nav_links{
+  list-style: none;
+  margin: 0;
+  background: red;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.nav_links a {
+  position: absolute;
+  left: 2rem;
+}
+
+.nav_links a img {
+  width: 30px;
+  height: 26px;
+}
+
+.header li{
+  
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+/*header end*/
+
+/* grid container css start */
+
+.grid-grid{
+  margin: 300px 80px 80px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-grid > article{
+  background: #fff;
+  border: none;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 250px;
+  transition: transform .3s;
+  min-height: 650px;
+  position: relative;
+ 
+  margin: 2rem 5% 0 0;
+}
+.grid-grid > article:hover{
+  transform: translateY(5px);
+  box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
+}
+
+.grid-grid > article img{
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.text-grid{
+  padding: 0 20px 20px;
+  position: relative;
+}
+
+.text-grid h3{
+  text-transform: uppercase;
+}
+
+
+article  a{
+ position: absolute;
+  height: 36px;
+  width: 100%;
+  left: 0;
+  bottom: 10px;
+}
+
+article a button{
+  background: #ef6f6c;
+  border-radius: 20px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 80%;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+article a button:hover{
+  opacity: 1.00;
+}
+@media (max-width:  900px){
+  .grid-grid{
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width:  768px){
+  .nav_links{
+    height: 100px;
+  }
+  .header-div a img{
+    width: 150px;
+  }
+  .grid-grid{
+    justify-items: center;
+    grid-template-columns: repeat(1, 80%);
+  }
+  .grid-grid > article{
+    text-align: center;
+  }
+}
+/* grid container css end */
+/*footer css start*/
+.footer{
+  padding: 40px 0px;
+  background-color: #fff;
+}
+.footer .social-footer{
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+
+}
+.footer .social-footer a img{
+  font-size: 25px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social-footer a:hover img{
+  opacity: 1.00;
+}
+
+.footer .copyright-footer{
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+/*footer css end*/
+
+@media (max-width: 1185px) {
+
+  .conatiner-grid {
+    padding: 1rem;
+  }
+
+  .grid-grid {
+    margin: 300px 0 0 0;
+    grid-template-columns: repeat(auto-fill, 45%);
+    column-gap: 2rem;
+  }
+
+  .grid-grid article {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-grid {
+    grid-template-columns: repeat(auto-fill, 80%) !important;
+  }
+}
