@@ -209,5 +209,41 @@ body {
 @media (max-width: 480px) {
   .grid-grid {
     grid-template-columns: repeat(auto-fill, 80%) !important;
+    justify-content: center;
+    margin-top: 180px;
   }
+
+  .grid-grid article {
+    margin: 1rem 0 0 0;
+    min-height: 480px;
+  }
+
+  .text-grid a {
+    left: 12%;
+  }
+}
+
+@media (max-width: 440px) {
+  .nav_links {
+    padding: 0 .5rem !important;
+  }
+
+  .nav_links a img {
+    width: 20px;
+    height: 18px;
+  }
+
+  .nav_links a {
+    left: 0.5rem;
+  }
+
+  .nav_links ul {
+    margin-left: 1rem;
+    padding-left: 0;
+  }
+
+  .nav_links ul li {
+    font-size: 14px;
+  }
+
 }
