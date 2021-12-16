@@ -120,7 +120,7 @@ body {
 	text-align: center;
 }
 
-.box a {
+.box .tel {
 	font-size: 1.5rem;
 	line-height: 1.2;
 	font-weight: 600;
@@ -437,6 +437,7 @@ header {
 
 .slide img {
 	height: 25vh;
+	object-fit: cover;
 }
 
 .slide-route {
@@ -467,7 +468,7 @@ header {
 	text-align: center;
 	flex: 0 0 300px;
 	transition: transform .3s;
-	height: 570px;
+	height: 100%;
 	margin-top: 1rem;
 }
 
@@ -478,6 +479,7 @@ header {
 
 .grid-grid>article img {
 	width: 100%;
+	justify-content: space-between;
 	height: 170px;
 	object-fit: cover;
 	border-top-left-radius: 20px;
@@ -485,7 +487,7 @@ header {
 }
 
 .text-grid {
-	padding: 0 20px 20px;
+	padding: 0 20px 60px;
 }
 
 .text-grid h3 {
@@ -684,6 +686,18 @@ a {
 	text-transform: uppercase;
 }
 
+.main-link {
+	background-color: transparent;
+	color: white;
+}
+
+.nav-link-button {
+	background-color: red;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	margin-top: 15px;
+}
 
 /* /payment */
 
@@ -858,7 +872,7 @@ a {
 	}
 
 	.header header {
-		padding: 10px;
+		padding: 30px 10px;
 	}
 
 	.nav_links li a {
@@ -888,6 +902,17 @@ a {
 
 @media only screen and (max-width: 576px) {
 
+	.nav-link-button {
+		margin-right: 20px;
+	}
+
+	.nav-link {
+		background-color: red;
+		color: white;
+		width: 94%;
+		margin-top: 6px;
+		border-radius: 10px;
+	}
 
 	.grid-grid article {
 		width: 80%;
@@ -900,8 +925,8 @@ a {
 		background-color: white;
 	}
 
-	.box a {
-		font-size: 18px;
+	.box .tel {
+		font-size: 14px;
 		line-height: 1;
 		font-weight: bold;
 		color: black;
@@ -911,7 +936,7 @@ a {
 	}
 
 	.logo {
-		width: 155px;
+		width: 110px;
 		margin-right: 0;
 	}
 
@@ -959,12 +984,17 @@ a {
 
 
 @media only screen and (max-width: 425px) {
-
+	.nav-link {
+		color: white !important;
+		width: 80%;
+		margin-top: 6px;
+		border-radius: 10px;
+	}
 
 	.box a {
 		font-size: 17px;
 		font-weight: bold;
-		color: #000;
+		color: white;
 		letter-spacing: 3px;
 		font-weight: bold;
 		text-align: center;
@@ -1020,12 +1050,26 @@ a {
 }
 
 @media only screen and (max-width: 376px) {
+	.nav-link-button {
+		margin-right: 0;
+	}
+	body{
+		padding: 43vh 0 0 0;
+	}
 
 	.logo {
 		max-width: 110px;
 	}
 
-	.box a {
-		font-size: 16px;
+	.box .tel {
+		font-size: 8px;
 	}
+
+	.box a {
+		font-size: 12px;
+	}
+}
+
+nav.meal {
+	height: 60px;
 }
