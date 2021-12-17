@@ -1,7 +1,10 @@
 body {
 	background: #fff;
 	margin: 0;
-	padding: 38vh 0 0 0;
+	padding: 39vh 0 0 0;
+}
+.boursak{
+	padding: 152px 0 0 0 !important;
 }
 
 
@@ -476,6 +479,15 @@ header {
 	transform: translateY(5px);
 	box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
 }
+.main-page{
+	grid-auto-columns: 1fr 1fr;
+	display: flex;
+	justify-content: center;
+}
+.main-page>article{
+	min-height: 400px;
+
+}
 
 .grid-grid>article img {
 	width: 100%;
@@ -543,7 +555,10 @@ header {
 
 @media only screen and (max-width: 576px) {
 
-
+.main-page{
+	display: grid;
+	grid-template-columns: 1fr;
+}
 
 	.grid-grid>article {
 		text-align: center;
@@ -593,11 +608,12 @@ header {
 }
 
 .menu-navbar nav ul {
+	align-items: center;
 	margin: 0;
 	padding: 0 80px;
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .menu-navbar nav ul li {
@@ -831,6 +847,9 @@ a {
 }
 
 @media only screen and (max-width: 1280px) {
+	body{
+		padding: 42vh 0 0 0;
+	}
 
 	.conatiner-grid {
 		margin-top: 20px;
@@ -844,7 +863,7 @@ a {
 
 	.menu-navbar nav ul li {
 		line-height: 1.5rem;
-		max-width: 126px;
+		max-width: 500px;
 	}
 
 	.grid-grid article {
@@ -856,7 +875,9 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-
+	body{
+		padding: 44vh 0 0 0;
+	}
 	.logo {
 		width: 150px;
 	}
@@ -983,7 +1004,10 @@ a {
 
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
+	body{
+		padding: 43vh 0 0 0;
+	}
 	.nav-link {
 		color: white !important;
 		width: 80%;
@@ -1050,11 +1074,14 @@ a {
 }
 
 @media only screen and (max-width: 376px) {
+	.menu-navbar nav ul li p{
+		font-size: 7px;
+	}
 	.nav-link-button {
 		margin-right: 0;
 	}
 	body{
-		padding: 43vh 0 0 0;
+		padding: 40vh 0 0 0;
 	}
 
 	.logo {
