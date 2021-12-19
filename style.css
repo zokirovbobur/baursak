@@ -1,9 +1,10 @@
 body {
 	background: #fff;
 	margin: 0;
-	padding: 39vh 0 0 0;
+	padding: 40vh 0 0 0;
 }
-.boursak{
+
+.boursak {
 	padding: 152px 0 0 0 !important;
 }
 
@@ -56,6 +57,15 @@ body {
 .loader.hidden {
 	animation: fadeOut 1.5s;
 	animation-fill-mode: forwards;
+}
+
+.main-text h3 {
+	color: green !important;
+	font-weight: bold;
+}
+
+.main-text h4 {
+	font-size: 18px;
 }
 
 @keyframes fadeOut {
@@ -479,12 +489,14 @@ header {
 	transform: translateY(5px);
 	box-shadow: 2px 2px 26px 0px rgba(0, 0, 0, 0.3);
 }
-.main-page{
+
+.main-page {
 	grid-auto-columns: 1fr 1fr;
 	display: flex;
 	justify-content: center;
 }
-.main-page>article{
+
+.main-page>article {
 	min-height: 400px;
 
 }
@@ -555,10 +567,10 @@ header {
 
 @media only screen and (max-width: 576px) {
 
-.main-page{
-	display: grid;
-	grid-template-columns: 1fr;
-}
+	.main-page {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 
 	.grid-grid>article {
 		text-align: center;
@@ -847,7 +859,7 @@ a {
 }
 
 @media only screen and (max-width: 1280px) {
-	body{
+	body {
 		padding: 42vh 0 0 0;
 	}
 
@@ -875,9 +887,10 @@ a {
 
 
 @media only screen and (max-width: 768px) {
-	body{
+	body {
 		padding: 44vh 0 0 0;
 	}
+
 	.logo {
 		width: 150px;
 	}
@@ -1005,9 +1018,10 @@ a {
 
 
 @media only screen and (max-width: 426px) {
-	body{
+	body {
 		padding: 43vh 0 0 0;
 	}
+
 	.nav-link {
 		color: white !important;
 		width: 80%;
@@ -1074,13 +1088,15 @@ a {
 }
 
 @media only screen and (max-width: 376px) {
-	.menu-navbar nav ul li p{
+	.menu-navbar nav ul li p {
 		font-size: 7px;
 	}
+
 	.nav-link-button {
 		margin-right: 0;
 	}
-	body{
+
+	body {
 		padding: 40vh 0 0 0;
 	}
 
